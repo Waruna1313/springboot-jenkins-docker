@@ -6,6 +6,9 @@ WORKDIR /app
 # Copy the project source code
 COPY . .
 
+# Install Maven
+RUN apt-get update && apt-get install -y openjdk-17-jdk maven
+
 # Use Maven to build the application (adjust based on your build tool)
 RUN mvn clean package
 
