@@ -14,7 +14,7 @@
 	<name>arficatbywaruna</name>
 	<description>Demo project by waruna</description>
 	<properties>
-		<java.version>22</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
