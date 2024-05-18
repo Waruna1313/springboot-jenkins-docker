@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 # Install Maven
-RUN apt-get update && apt-get install -y openjdk-17-jdk maven
+RUN apk add --no-cache openjdk17 maven
 
 # Use Maven to build the application (adjust based on your build tool)
 RUN mvn clean package
